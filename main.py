@@ -2,6 +2,7 @@
 
 import flet as ft
 
+
 class ConfirmarSaida:
     def __init__(self,page, funcao = None):
         super().__init__()
