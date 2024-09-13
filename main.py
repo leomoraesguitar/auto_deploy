@@ -1,5 +1,3 @@
-
-
 import flet as ft
 
 
@@ -50,7 +48,6 @@ class Resize:
         self.pw.value = f'{self.page.window.width}*{self.page.window.height} px'
         self.pw.update()
 
-
 class Saida(ft.Column):
     def __init__(self, height=150, page = None):
         super().__init__()
@@ -81,7 +78,6 @@ class Saida(ft.Column):
             pass
 
 
-
 class ClassName(ft.Column):
     def __init__(self):
         super().__init__()
@@ -91,14 +87,14 @@ class ClassName(ft.Column):
 def main(page: ft.Page):
     # Definindo o titulo da pagina
     page.title = 'Título'
-    page.window.width = 500  # Define a largura da janela como 800 pixels
-    page.window.height = 385  # 
-    page.theme_mode = ft.ThemeMode.DARK
+    # page.window.width = 500  # Define a largura da janela como 800 pixels
+    # page.window.height = 385  # 
+    # page.theme_mode = ft.ThemeMode.DARK
 
-    ConfirmarSaida(page  = page)
-    Resize(page)
+    # ConfirmarSaida(page  = page)
+    # Resize(page)
     p = ClassName()
-    page.add(p,saida)
+    page.add(p)
 
 if __name__ == '__main__': 
     saida = Saida()
